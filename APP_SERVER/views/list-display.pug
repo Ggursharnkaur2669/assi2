@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1.pl Movie List
+    ul.pl
+        each m in movie
+            li 
+                h3 Movie Title:  #{m.title}
+                h3 Year:  #{m.year}
+                h3 Distributor:  #{m.distributor}
+                br
